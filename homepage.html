@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OT Lab & DevOps Master Pathway</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        otDark: '#0b0f19',
+                        otCard: '#111827',
+                        otBorder: '#1f2937',
+                        otLightBg: '#f8fafc',
+                        otLightCard: '#ffffff',
+                        otLightBorder: '#e2e8f0'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-otDark text-slate-200 min-h-screen p-6 font-sans transition-colors duration-300 dark:bg-otDark dark:text-slate-200 bg-otLightBg text-slate-800">
+
+    <!-- Header & Stats Dashboard -->
+    <div class="max-w-7xl mx-auto space-y-8">
+        
+        <header class="flex flex-col md:flex-row md:items-center md:justify-between border-b border-otBorder dark:border-otBorder border-otLightBorder pb-6 gap-4">
+            <div>
+                <h1 class="text-3xl font-extrabold tracking-tight dark:text-white text-slate-900 flex items-center gap-3">
+                    <i class="fa-solid fa-microchip text-cyan-500"></i> OT & DevOps Master Pathway
+                </h1>
+                <p class="dark:text-slate-400 text-slate-600 text-sm mt-1">Industrial Control Systems, Edge Observability & Security Lab</p>
+            </div>
+            
+            <div class="flex items-center gap-3">
+                <!-- Progress Summary -->
+                <div class="flex items-center gap-4 dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder px-5 py-3 rounded-xl shadow-lg">
+                    <div class="text-center border-r dark:border-otBorder border-otLightBorder pr-4">
+                        <span class="text-xs uppercase dark:text-slate-400 text-slate-500 font-semibold block">Completed</span>
+                        <span class="text-xl font-bold text-emerald-500">5 / 21</span>
+                    </div>
+                    <div class="text-center pl-1">
+                        <span class="text-xs uppercase dark:text-slate-400 text-slate-500 font-semibold block">Overall Progress</span>
+                        <span class="text-xl font-bold text-cyan-500">23.8%</span>
+                    </div>
+                </div>
+
+                <!-- Theme Toggle Button -->
+                <button id="themeToggle" class="flex items-center justify-center p-3.5 rounded-xl border dark:border-otBorder border-otLightBorder dark:bg-otCard bg-otLightCard dark:text-amber-400 text-slate-700 hover:text-amber-500 shadow-lg transition-all hover:scale-105" title="Toggle Dark/Light Mode">
+                    <i id="themeIcon" class="fa-solid fa-sun text-lg"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Module Grid -->
+        <main>
+            <h2 class="text-lg font-bold dark:text-slate-300 text-slate-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-layer-group text-slate-500"></i> Learning Modules
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                <!-- 01 Virtualization -->
+                <a href="./01%20-%20Virtualization%20Fundamantal" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-emerald-500/50 rounded-xl p-5 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-500/5">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 01</span>
+                        <div class="flex flex-col items-end gap-1">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-0.5 rounded-full"><i class="fa-solid fa-circle-check"></i> Completed</span>
+                            <span class="text-[11px] font-mono font-medium text-emerald-500">80.5% Mastery</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-white text-slate-900 group-hover:text-emerald-500 transition-colors mt-3">Virtualization Fundamental</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">QEMU, KVM, libvirt, virsh, networking & pass-through</p>
+                </a>
+
+                <!-- 02 Linux Operations -->
+                <a href="./02%20-%20Linux%20Operations%20%26%20Systemd" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-emerald-500/50 rounded-xl p-5 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-500/5">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 02</span>
+                        <div class="flex flex-col items-end gap-1">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-0.5 rounded-full"><i class="fa-solid fa-circle-check"></i> Completed</span>
+                            <span class="text-[11px] font-mono font-medium text-emerald-500">92.0% Mastery</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-white text-slate-900 group-hover:text-emerald-500 transition-colors mt-3">Linux Operations & Systemd</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Custom services, daemons, user permissions & port inspection</p>
+                </a>
+
+                <!-- 03 Git for Infra -->
+                <a href="./03%20-%20Git%20for%20Infrastructure" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-emerald-500/50 rounded-xl p-5 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-500/5">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 03</span>
+                        <div class="flex flex-col items-end gap-1">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-0.5 rounded-full"><i class="fa-solid fa-circle-check"></i> Completed</span>
+                            <span class="text-[11px] font-mono font-medium text-emerald-500">94.0% Mastery</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-white text-slate-900 group-hover:text-emerald-500 transition-colors mt-3">Git for Infrastructure</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Branching, PRs, reflog, Terraform & Ansible manifests</p>
+                </a>
+
+                <!-- 04 Python Basics -->
+                <a href="./04%20-%20Python%20Basics%20%26%20OT%20Automation" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-emerald-500/50 rounded-xl p-5 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-500/5">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 04</span>
+                        <div class="flex flex-col items-end gap-1">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-0.5 rounded-full"><i class="fa-solid fa-circle-check"></i> Completed</span>
+                            <span class="text-[11px] font-mono font-medium text-emerald-500">99.4% Mastery</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-white text-slate-900 group-hover:text-emerald-500 transition-colors mt-3">Python Basics & OT Automation</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Hex, bytes, sockets, OOP, file I/O & simulator scripts</p>
+                </a>
+
+                <!-- 05 Modbus Protocol -->
+                <a href="./05%20-%20Modbus%20Protocol" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-emerald-500/50 rounded-xl p-5 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-500/5">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 05</span>
+                        <div class="flex flex-col items-end gap-1">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-0.5 rounded-full"><i class="fa-solid fa-circle-check"></i> Completed</span>
+                            <span class="text-[11px] font-mono font-medium text-emerald-500">96.0% Mastery</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-white text-slate-900 group-hover:text-emerald-500 transition-colors mt-3">Modbus Protocol</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">MBAP header, coils, holding registers, exception codes</p>
+                </a>
+
+                <!-- 06 Podman & Docker -->
+                <a href="./06%20-%20Podman%20%26%20Docker" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-cyan-500/50 rounded-xl p-5 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/5">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 06</span>
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-400 bg-cyan-950/60 border border-cyan-800 px-2.5 py-0.5 rounded-full"><i class="fa-solid fa-spinner fa-spin"></i> Next Up</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-white text-slate-900 group-hover:text-cyan-500 transition-colors mt-3">Podman & Docker</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">OCI containers, rootless security, podman-compose stacks</p>
+                </a>
+
+                <!-- 07 TShark and Wireshark -->
+                <a href="./07%20-%20TShark%20and%20Wireshark" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 07</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">TShark & Wireshark</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">OT packet analysis, PCAP parsing, protocol dissectors</p>
+                </a>
+
+                <!-- 08 Nginx Loadbalancing -->
+                <a href="./08%20-%20Nginx%20Loadbalancing" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 08</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">Nginx Load Balancing</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Reverse proxying, TLS termination, API routing</p>
+                </a>
+
+                <!-- 09 MQTT & Edge Brokers -->
+                <a href="./09%20-%20MQTT%20%26%20Edge%20Brokers" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 09</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">MQTT & Edge Brokers</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Mosquitto broker setup, pub/sub telemetry, edge routing</p>
+                </a>
+
+                <!-- 10 OPC UA Architecture -->
+                <a href="./10%20-%20OPC%20UA%20Architecture" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 10</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">OPC UA Architecture</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">NodeID modeling, security endpoints, client/server stack</p>
+                </a>
+
+                <!-- 11 InfluxDB -->
+                <a href="./11%20-%20InfluxDB" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 11</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">InfluxDB</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Time-series data, push ingestion, bucket retention rules</p>
+                </a>
+
+                <!-- 12 Prometheus -->
+                <a href="./12%20-%20Prometheus" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 12</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">Prometheus</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Pull-based scraping, Exporters, PromQL metrics queries</p>
+                </a>
+
+                <!-- 13 Grafana Loki -->
+                <a href="./13%20-%20Grafana%20Loki" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 13</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">Grafana Loki</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Log aggregation, Promtail/Fluentbit agents, LogQL</p>
+                </a>
+
+                <!-- 14 Grafana Dashboards -->
+                <a href="./14%20-%20Grafana%20Dashboards" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 14</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">Grafana Dashboards</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Unified SCADA, system health, and log visualization</p>
+                </a>
+
+                <!-- 15 Purdue Model & Segmentation -->
+                <a href="./15%20-%20Purdue%20Model%20%26%20Segmentation" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 15</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">Purdue Model & Segmentation</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Level 0-3 architecture, firewalls, network isolation</p>
+                </a>
+
+                <!-- 16 OT Intrusion Detection -->
+                <a href="./16%20-%20OT%20Intrusion%20Detection%20(IDS)" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 16</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">OT Intrusion Detection (IDS)</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Deep packet inspection, Suricata rules, anomaly detection</p>
+                </a>
+
+                <!-- 17 Soft-PLC & HMI Systems -->
+                <a href="./17%20-%20Soft-PLC%20%26%20HMI%20Systems" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 17</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">Soft-PLC & HMI Systems</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">OpenPLC, Ladder Logic, Node-RED operator interfaces</p>
+                </a>
+
+                <!-- 18 CI CD Pipelines -->
+                <a href="./18%20-%20CI%20CD%20Pipelines" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 18</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">CI/CD Pipelines</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">GitHub Actions, automated linting, container builds</p>
+                </a>
+
+                <!-- 19 Terraform -->
+                <a href="./19%20-%20Terraform" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 19</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">Terraform</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Infrastructure as Code (IaC), provider configs, state files</p>
+                </a>
+
+                <!-- 20 Ansible -->
+                <a href="./20%20-%20Ansible" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 20</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">Ansible</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Configuration management, playbooks, automated provisioning</p>
+                </a>
+
+                <!-- 21 Scada Ignition -->
+                <a href="./21%20-%20Scada%20Ignition" class="group dark:bg-otCard bg-otLightCard border dark:border-otBorder border-otLightBorder hover:border-slate-500 rounded-xl p-5 transition-all hover:-translate-y-1">
+                    <div class="flex items-start justify-between">
+                        <span class="text-xs font-mono font-bold text-slate-500 dark:bg-slate-800 bg-slate-100 px-2.5 py-1 rounded">MOD 21</span>
+                        <span class="text-xs text-slate-500 font-semibold">Planned</span>
+                    </div>
+                    <h3 class="text-lg font-bold dark:text-slate-200 text-slate-800 group-hover:text-cyan-500 transition-colors mt-3">SCADA Ignition</h3>
+                    <p class="text-xs dark:text-slate-400 text-slate-600 mt-1">Enterprise tag management, Perspective UI, industrial gateways</p>
+                </a>
+
+            </div>
+        </main>
+
+        <!-- Auxiliary Folders Footer -->
+        <footer class="border-t dark:border-otBorder border-otLightBorder pt-6 mt-12">
+            <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">Auxiliary Vault Resources</h3>
+            <div class="flex flex-wrap gap-3">
+                <a href="./AI%20Learning%20assistance" class="text-xs dark:bg-slate-900 bg-slate-100 border dark:border-slate-800 border-slate-300 hover:border-slate-500 dark:text-slate-300 text-slate-700 px-3 py-1.5 rounded-lg flex items-center gap-2">
+                    <i class="fa-solid fa-robot text-purple-400"></i> AI Learning Assistance
+                </a>
+                <a href="./copilot" class="text-xs dark:bg-slate-900 bg-slate-100 border dark:border-slate-800 border-slate-300 hover:border-slate-500 dark:text-slate-300 text-slate-700 px-3 py-1.5 rounded-lg flex items-center gap-2">
+                    <i class="fa-solid fa-code text-cyan-400"></i> Copilot Prompts & Logs
+                </a>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Mode Switcher Script -->
+    <script>
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const htmlElement = document.documentElement;
+
+        themeToggleBtn.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                themeToggleBtn.classList.remove('dark:text-amber-400');
+                themeToggleBtn.classList.add('text-indigo-600');
+            } else {
+                htmlElement.classList.add('dark');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                themeToggleBtn.classList.remove('text-indigo-600');
+                themeToggleBtn.classList.add('dark:text-amber-400');
+            }
+        });
+    </script>
+</body>
+</html>
