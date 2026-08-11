@@ -1,6 +1,6 @@
 # 🏭 Industrial OT & DevOps Engineering Lab
 <div align="center">
 
-[![Live Dashboard](https://img.shields.io/badge/Dashboard-Open_Interactive_View-0052CC?style=for-the-badge&logo=github)](https://amlahmar.github.io/OT-Lab/)
+[![Interactive Dashboard](https://img.shields.io/badge/Dashboard-Ouvrir_le_Tableau_de_Bord_Interactif-0052CC?style=for-the-badge&logo=github)](https://amlahmar.github.io/AMLAHMAR/homepage.html)
 
 </div>
