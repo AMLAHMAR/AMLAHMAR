@@ -2,8 +2,8 @@
 
 <div align="center">
 
-[![Progress](https://img.shields.io/badge/Pathway_Progress-23.8%25_Completed-0052CC?style=for-the-badge&logo=target)](https://github.com/AMLAHMAR/OT-Lab)
-[![Modules](https://img.shields.io/badge/Modules_Completed-5_of_21-10B981?style=for-the-badge&logo=checkmarx)](https://github.com/AMLAHMAR/OT-Lab)
+[![Progress](https://img.shields.io/badge/Pathway_Progress-19.0%25_Completed-0052CC?style=for-the-badge&logo=target)](https://github.com/AMLAHMAR/OT-Lab)
+[![Modules](https://img.shields.io/badge/Modules_Completed-4_of_21-10B981?style=for-the-badge&logo=checkmarx)](https://github.com/AMLAHMAR/OT-Lab)
 [![Lab Repository](https://img.shields.io/badge/OT--Lab-View_Repository-00D2FF?style=for-the-badge&logo=github)](https://github.com/AMLAHMAR/OT-Lab)
 
 </div>
@@ -30,8 +30,8 @@
     </tr>
     <tr>
       <td><b><a href="https://github.com/AMLAHMAR/OT-Lab/tree/main/02%20-%20Linux%20Operations%20%26%20Systemd">02 - Linux Operations & Systemd</a></b></td>
-      <td><code>✅ Completed</code></td>
-      <td><b>92.0%</b></td>
+      <td><code>🔄 Next Up</code></td>
+      <td><i>Pending Audit</i></td>
       <td>Systemd services, daemons, user ACLs, networking</td>
     </tr>
     <tr>
@@ -54,8 +54,8 @@
     </tr>
     <tr>
       <td><b><a href="https://github.com/AMLAHMAR/OT-Lab/tree/main/06%20-%20Podman%20%26%20Docker">06 - Podman & Docker</a></b></td>
-      <td><code>🔄 In Progress</code></td>
-      <td><i>Pending Audit</i></td>
+      <td><code>⏳ Planned</code></td>
+      <td>—</td>
       <td>OCI containers, rootless execution, podman-compose</td>
     </tr>
     <tr>
